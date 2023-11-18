@@ -1,7 +1,8 @@
-from django.utils.translation import gettext_lazy as _
 import os
-import pathlib
 
+from django.utils.translation import gettext_lazy as _
+
+import pathlib
 import dotenv
 
 __all__ = []
@@ -116,7 +117,7 @@ LANGUAGES = [
     ('en', _('English')),
     ('ru', _('Russian')),
 ]
-LOCALE_PATHS = (BASE_DIR / 'locale', )
+LOCALE_PATHS = (BASE_DIR / 'locale',)
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static_dev']

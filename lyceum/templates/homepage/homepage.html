@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% load static %}
+    <div class="container-xl">
+        <h1 class="text-center">Главная страница</h1>
+        <img src="{% static 'img/cat-1.jpg' %}" class="img-fluid" alt="Самый лучший кот">
+    </div>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Котики</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="icon" type="image" href="{% static "img/favicon.ico" %}">
+    <link rel="icon" type="image" sizes="16x16" href="{% static "img/favicon-16x16.png" %}">
+    <link rel="icon" type="image" sizes="32x32" href="{% static "img/favicon-32x32.png" %}">
+    <link rel="mask-icon" href="mask-icon.svg" color="#000000">
+    <link rel="apple-touch-icon" sizes="180x180"href="apple-touch-icon.png">
+    <script src="{% static "js/jquery-3.2.1.slim.min.js" %}"></script>
+</head>
+<body>
+    {% include "includes/header.html" %}
+
+    <main>
+        {% block content %}Контента нема {% endblock %}
+    </main>
+    {% include "includes/footer.html" %}
+
+</body>
+</html>

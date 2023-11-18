@@ -1,9 +1,9 @@
 import os
 
-from django.utils.translation import gettext_lazy as _
-
 import pathlib
 import dotenv
+
+from django.utils.translation import gettext_lazy as _
 
 __all__ = []
 
@@ -54,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'lyceum.middleware.ReverseRussianMiddleware',
+    'LocaleMiddleware',
 ]
 
 if DEBUG:
